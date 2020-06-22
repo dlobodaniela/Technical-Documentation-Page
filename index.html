@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="./styles.css"> 
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
+
+</head>
+
+
+<body>
+
+    <nav id="navbar">
+        <header class="title">HTML for Beginners</header>
+        <ul>
+            <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
+            <li><a class="nav-link" href="#HTML_Page_Structure">HTML Page Structure</a></li>
+            <li><a class="nav-link" href="#HTML_Tags">HTML Tags</a></li>
+            <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
+            <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
+            <li><a class="nav-link" href="#Reference">Reference</a></li>       
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header>
+            <article>
+                <p>In this guide, we will explore the basic principles of HTML and its potential applications, before
+                    looking at examples of the individual elements that you use when coding your website.</p>
+            </article>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="main-section" id="What_is_HTML?">
+            <header>What is HTML?</header>
+            <article>
+                <p>In simple terms, HTML represents the standard markup language for creating web pages online. It
+                    stands for Hyper Text Markup Language, and its most primary function is to establish the structure,
+                    layout and presentation of individual landing pages. While web browsers do not directly display HTML
+                    language, it plays a pivotal role in helping to create a visible, accessible and easy to use site.
+                </p>
+                <p>HTML is also underpinned by a number of individual elements, which gradually build web pages,
+                    structure the presentation of content and bring your website to life. These elements are created and
+                    contained within ‘tags’, which define alternate pieces of content such as headings, paragraphs, and
+                    similar examples.
+                </p>
+            </article>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="main-section" id="HTML_Page_Structure">
+            <header>HTML Page Structure</header>
+            <article>
+                <p>Typically, a page will be made up of three structural elements:</p>
+                <ol>
+                    <li><span class="highlight">Header:</span> The header contains content relevant to all pages on your site, such as a logo or
+                        website name, and a navigation system. The header is seen on each page.</li>
+                    <li><span class="highlight">Main Body:</span> This occupies the largest area on a web page. It contains content specific to the
+                        page being viewed.</li>
+                    <li><span class="highlight">Footer:</span> content usually includes contact information, a shipping address or legal
+                        notices. Like the header, the footer appears on every page, but it’s positioned at the bottom.
+                    </li>
+                </ol>
+
+                <p>Here’s what those basic structural elements look like when they come together:</p>
+               
+
+                <div class="code">
+                    <code>
+                        &lt;html&gt;<br><br>
+                        &lt;head&gt; <br>
+                        You can put text or code here, like a<br> 
+                        Google Analytics tracking code for<br>
+                        example. <br>
+               
+                        &lt;/head&gt;<br><br>
+                        &lt;body&gt; <br>
+                
+                        The main body of your page goes<br>here. Fill it with text and images!<br>
+               
+                        &lt;/body&gt;<br><br>
+                        &lt;/html&gt;
+                    </code>    
+                </div><br>
+            </article>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="main-section" id="HTML_Tags">
+            <header>HTML Tags</header>
+            <article>
+                <p>The starting point for any HTML code is individual tags, which can be used to create all crucial
+                    elements and help to structure your web pages. Below, we will take a look at the most common tags
+                    before we explore how they can be leveraged to generate specific, on-page elements:</p>
+            </article>
+
+            <article>
+                <h3>Heading Tags</h3>
+                <p>All online documents, including web pages, begin with a heading. These are constructed using HTML
+                    tags, with the language currently allowing for up to six variably sized elements that also enable
+                    you to structure your content with additional titles, subtitles and highlighted lines of bold text.
+                    To start your heading, you simply prefix the relevant text with the &lt;h1&gt; , &lt;h2&gt; ,
+                    &lt;h3&gt; , &lt;h4&gt; , &lt;h5&gt; or &lt;h6&gt; tag depending on the desired size.</p>
+                <p>You must then apply a closing tag at the end of the heading to encapsulate the text, and will be
+                    displayed as follows in HTML format:</p>
+
+                <div class="code">
+                    <code>
+                        &lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+                        &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+                        &lt;h3&gt;This is heading 3&lt;/h3&gt;<br>
+                        &lt;h4&gt;This is heading 4&lt;/h4&gt;<br>
+                        &lt;h5&gt;This is heading 5&lt;/h5&gt;<br>
+                        &lt;h6&gt;This is heading 6&lt;/h6&gt;<br>
+                    </code>
+                </div>    
+
+                <p>Once confirmed, this will translate into the following aesthetic on your website&rsquo;s landing
+                    page:</p>
+                <div class="code">
+                    <p style="font-size:36px;line-height:0.3;font-weight:bold">This is
+                        heading 1</p>
+                    <p
+                        style="font-size:30px;line-height:1.2;font-weight:bold">
+                        This is heading 2</p>
+                    <p
+                        style="font-size:25px;line-height:1.2;font-weight:bold">
+                        This is heading 3</p>
+                    <p
+                        style="font-size:20px;line-height:1.2;font-weight:bold">
+                        This is heading 4</p>
+                    <p
+                        style="font-size:16px;line-height:1.4;font-weight:bold">
+                        This is heading 5</p>
+                    <p> <span
+                            style="font-size:12px;line-height:1.4;font-weight:bold">This
+                            is heading 6</span>
+                </div>
+            </article>
+
+            <article>
+                <h3>Paragraph Tags</h3>
+                <p>A similar principle is applied to starting paragraph tags, which are depicted by &lt;p&gt;. This
+                    allows you to structure your content and divide it into relevant paragraphs, which in turn
+                    translates into an easier and more seamless reading experience. Once again, the &lt;p&gt; tag
+                    should be placed at the beginning of the relevant text, before the alternate closing tag is
+                    applied at the end to complete the effect. For example:</p>
+
+                <div class="code">
+                    <code>
+                        &lt;p&gt;Your First Paragraph&lt;/p&gt;
+                        &lt;p&gt;Your Second Paragraph&lt;/p&gt;
+                        &lt;p&gt;Your Third Paragraph&lt;/p&gt;
+                    </code>
+                </div>
+
+                <p>Outside of the HTML format, this will break the text down as follows on your finished web page:</p>
+
+                <div class="code">
+                    <p>Your First Paragraph</p>
+                    <p>Your Second Paragraph</p>
+                    <p>Your Third Paragraph</p>
+                </div>    
+            </article>
+
+            <article>
+                <h3>Line Break Tags</h3>
+                <p>Line breaks creates a distinction at which lines of text are broken and continued on the following
+                    line. There is a core difference between line breaks and paragraphs in the field of HTML, as while
+                    the latter are standard block elements that contain text, the former creates a separation within an
+                    existing &lt;p&gt; element.</p>
+                <p>Because of this, line breaks represent an empty element in HTML and are therefore not defined by
+                    either opening or closing tags. Instead, they are depicted by the &lt;br&gt; tag, which can be
+                    inserted into existing &lt;p&gt; elements to break up text and potentially highlight important
+                    pieces of information. Here is an example:</p>
+                <p class="code"><code>&lt;p&gt;Good morning&lt;br&gt; Many thanks for your enquiry, we will contact you if we require anything else.&lt;br&gt; Best Regards&lt;br&gt; Mr. J ones&lt;/p&gt;
+                    </code></p>
+                <p>Once applied, this will break the text up as follows:</p>
+                <div class="code">
+                    <p>Good morning, </p>
+                    <p>Many thanks for your enquiry, we will contact you if we require anything else.</p>
+                    <p>Best Regards</p>
+                    <p> Mr. Jones
+                    </p>
+                </div>
+            </article>
+
+            <article>
+                <h3>Image Tags</h3>
+                <p>Image tags also represent empty elements in HTML, which once again means that they do not feature a
+                    closing tag. As they only contain attributes that relate to the URL of the image that you are
+                    embedding onto the site, they are defined simply by the &lt;img&gt; tag at the beginning of the
+                    element.
+                    These can be placed anywhere on your website, although it is unusual to include them in existing
+                    elements such as paragraphs or headings. Here is how a typical HTML image tag will present itself:
+                </p>
+                <p class="code"><code>&lt;img src="url" alt="some_text" style="width:width;height:height;"&gt;</code></p>
+                <p>You should also provide alternate text for your image, which helps people to view it in the case of
+                    slow loading times or the use of screen reader. This way, if the browser cannot find an image, it
+                    will display the value of the alternate attribute to viewers. This once again uses the image tag,
+                    but includes a different set of attributes:</p>
+                <p class="code"><code>&lt;img src="wrongname.gif" alt ="HTML5 Icon" style="width: 128px; height: 128px;"&gt;</code>
+                </p>
+            </article>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="main-section" id="HTML_Elements">
+            <header>HTML Elements</header>
+            <article>
+                <p>While all aspects of the HTML language are represented by a tag, for example, a defined element that
+                    includes content must have both a starting and a closing tag. So, headings and paragraphs are HTML
+                    elements because they use starting and closing tags to encapsulate and augment the relevant text. In
+                    contrast, empty elements either contain attributes or no content at all, allowing them to be used
+                    within existing elements without the need for a closing tag.</p>
+            </article>
+
+            <article>
+                <h3>Defining HTML Elements</h3>
+                <p>When using examples such as headings and paragraphs, the correct application of starting and close
+                    tags is crucial. It is the starting tag (such as &lt;h1&gt; or &lt;p&gt;) that defines the element
+                    in question, for example, while the closing tag ensures that this element is not continued across
+                    the remainder of the web page. If you fail to use the closing &lt;/p&gt;tag at the end of a desired
+                    paragraph, for example, the text will appear in a single block that is unsightly and extremely
+                    difficult to read.</p>
+                <p>All closing tags are identical to starting tags apart from the fact that the former feature a forward
+                    slash before the relevant characters. So in the instance of an &lt;h1&gt; heading, the closing tag
+                    will be &lt;/h1&gt;, while for paragraphs you will always use &lt;/p&gt; to define the break in
+                    text. This requires attention to detail while coding, and it is important to note when programming
+                    headings that the number you use (such as h1 or h2) is applied in both the starting and the closing
+                    tags.</p>
+            </article>
+
+            <article>
+                <h3>Bold, Italic and Underlined Text in HTML</h3>
+                <p>Let’s say that you want to highlight a word within an existing paragraph element. You can achieve
+                    this by making it bold, using simple tags within the standard &lt;p&gt; element. Using HTML, you
+                    will program this as follows:</p>
+                <div class="code">    
+                    <code>&lt;p&gt;I want &lt;b&gt;this&lt;/b&gt; word to be bold.&lt;/p&gt;</code>
+                </div>
+                <p>This instance it will produce the following results:</p>
+                <p class="code">I want <b>this</b> word to be bold.</p> 
+                <p>Now, let’s say that you would also like to change the typography of this word so that it is also
+                    italic, which should be coded like this:</p>
+                <div class="code">     
+                    <code>&lt;p&gt;I want &lt;b&gt;&lt;i&gt;this&lt;/b&gt;&lt;/i&gt; word to be bold.&lt;/ p&gt;</code>
+                </div>    
+                <p>As you can see, the starting and closing italic tags have simply been incorporated into the &lt;p&gt;
+                    element. This will now transform the content within the element so that it appears as follows: </p>
+                <p class="code">I want <i><b>this</b></i> word to be bold.</p>
+               
+                <p>Of course, you may decide that you would prefer to highlight this word in a different way, such as
+                    underline (which is represented by the &lt;u&gt; and &lt;/u&gt; tags):</p>
+                <div class="code">
+                    <code>&lt;p&gt;I want &lt;u&gt;this&lt;/u&gt; word to be underlined.&lt;/p&gt;</code>
+                </div>    
+                <p>In this instance, the text will appear as follows on your document or landing page:</p>
+                <p>I want <u>this</u> word to be underlined.</p>
+
+            </article>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="main-section" id="HTML_Attributes">
+            <header>HTML Attributes</header>
+            <article>
+                <p>If tags are the building blocks that construct and define elements, then HTML attributes can be used
+                    to customise their characteristics (such as style, colour and language. All HTML elements have core
+                    attributes, which provide core information and are always specified within the stat tag. They tend
+                    to come in pairs, so will often appear in the following format: name=”value.“</p>
+                <p>In simple terms, the name represents the property that you want to set, while the value relates to
+                    the specific criteria that you want to incorporate.</code></p>
+                <p>There are a large number of attributes that can be applied to your HTML elements, but those that are
+                    most relevant to fledgling webmasters are:</p>
+                <ul>
+                    <li>The ‘Align’ Attribute</li>
+                    <li>The ‘Href’ Attribute</li>
+                    <li>The ‘Color’ Attribute</li>
+                </ul>
+            </article>
+
+            <article>
+                <h3>The ‘Align’ Attribute</h3>
+                <p>We have already touched on the format of HTML attributes (name=”value), and the best embodiment of
+                    this occurs when you try to align the content within your elements. You may decide to center all
+                    paragraphs on a specific page, for example, with the alignment being the property that you wish to
+                    set. Subsequently, ’center’ is the value of the attribute, although you have the choice of aligning
+                    your text to the left or the right. For example:</p>
+                <div class="code">    
+                    <code>&lt;p align="center" &gt;This text is center aligned&lt;/p&gt;</code>
+                </div>    
+                <p>This will align your &lt;p&gt; elements in the centre of the page, and create a uniform layout to
+                    suit the specific nature of your website (see below):</p>
+                <div style="text-align: center !important; line-height: 2" class="code">
+                    <p>This text is center aligned</p>
+                    <p>This text is center aligned</p>
+                    <p>This text is center aligned</p>
+                </div>
+            </article>
+
+            <article>
+                <h3>The ‘Href’ Attribute</h3>
+                <p>If you are going to build a visible website, it is important that you incorporate both inbound and
+                    outbound links. HTML links are defined with the &lt;a&gt; tag, which includes the destination link
+                    along with the affiliated anchor text that will house the URL. It is the ‘href ’ attribute that
+                    specifies the site address, however, this is incorporated as part of the start tag. It is coded in
+                    HTML as follows:</p>
+                <div class="code">    
+                    <code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code>
+                </div>    
+                <p>This clearly highlights the distinction between the starting and the closing tag, and will translate
+                    as follows on your landing page:</p>
+                <div class="code">
+                    <a target="_blank" href="https://www.google.com" rel="noopener noreferrer">Google</a>
+                </div>    
+            </article>
+
+            <article>
+                <h3>The ‘Color’ Attribute</h3>
+                <p>This is another important attribute, as the use of colour can breathe life into your website while
+                    helping to create important contrasts and a strong design aesthetic. In HTML, a colour can be
+                    specified by using its name, although it is also possible to utilise an RGB or a HEX value to
+                    achieve this aim.</p>
+                <p>This is a style attribute, with your choice of color representing the value that you would like to
+                    set. When applying the color red to a main heading, for example, it will look like this:</p>
+                <div class="code">
+                    <code>&lt;h1 style=”background-color:red”&gt;Background-color set by using red&lt;/h1&gt;</code>
+                </div>    
+                <p>Once applied, this element will appear as follows on your website:</p>
+                <div class="code">
+                    <h1 style="background-color:red">Background-color set by using red</h1>
+                </div>    
+            </article>
+        </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section class="main-section" id="Reference">
+            <header>Reference</header>
+            <article>
+                <ul>
+                    <li>
+                        All the documentation in this page is taken from
+                        <a href="https://firstsiteguide.com/html-for-beginners/" target="_blank">FirstSiteGuide</a>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+    </main>
+
+</body>
+
+
+</html>
