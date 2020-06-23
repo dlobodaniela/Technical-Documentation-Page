@@ -8,7 +8,7 @@
 
     <title>Technical Documentation Page (FCC challenge)</title>
 
-    <link rel="stylesheet" type="text/css" href="./styles.css"> 
+    <link rel="stylesheet" type="text/css" href="./styles.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Lato">
 
 </head>
@@ -25,7 +25,7 @@
             <li><a class="nav-link" href="#HTML_Tags">HTML Tags</a></li>
             <li><a class="nav-link" href="#HTML_Elements">HTML Elements</a></li>
             <li><a class="nav-link" href="#HTML_Attributes">HTML Attributes</a></li>
-            <li><a class="nav-link" href="#Reference">Reference</a></li>       
+            <li><a class="nav-link" href="#Reference">Reference</a></li>
         </ul>
     </nav>
 
@@ -67,17 +67,20 @@
             <article>
                 <p>Typically, a page will be made up of three structural elements:</p>
                 <ol>
-                    <li><span class="highlight">Header:</span> The header contains content relevant to all pages on your site, such as a logo or
+                    <li><span class="highlight">Header:</span> The header contains content relevant to all pages on your
+                        site, such as a logo or
                         website name, and a navigation system. The header is seen on each page.</li>
-                    <li><span class="highlight">Main Body:</span> This occupies the largest area on a web page. It contains content specific to the
+                    <li><span class="highlight">Main Body:</span> This occupies the largest area on a web page. It
+                        contains content specific to the
                         page being viewed.</li>
-                    <li><span class="highlight">Footer:</span> content usually includes contact information, a shipping address or legal
+                    <li><span class="highlight">Footer:</span> content usually includes contact information, a shipping
+                        address or legal
                         notices. Like the header, the footer appears on every page, but it’s positioned at the bottom.
                     </li>
                 </ol>
 
                 <p>Here’s what those basic structural elements look like when they come together:</p>
-               
+
 
                 <div class="code">
                     <code>
@@ -94,7 +97,7 @@
                
                         &lt;/body&gt;<br><br>
                         &lt;/html&gt;
-                    </code>    
+                    </code>
                 </div><br>
             </article>
         </section>
@@ -130,27 +133,22 @@
                         &lt;h5&gt;This is heading 5&lt;/h5&gt;<br>
                         &lt;h6&gt;This is heading 6&lt;/h6&gt;<br>
                     </code>
-                </div>    
+                </div>
 
                 <p>Once confirmed, this will translate into the following aesthetic on your website&rsquo;s landing
                     page:</p>
                 <div class="code">
                     <p style="font-size:36px;line-height:0.3;font-weight:bold">This is
                         heading 1</p>
-                    <p
-                        style="font-size:30px;line-height:1.2;font-weight:bold">
+                    <p style="font-size:30px;line-height:1.2;font-weight:bold">
                         This is heading 2</p>
-                    <p
-                        style="font-size:25px;line-height:1.2;font-weight:bold">
+                    <p style="font-size:25px;line-height:1.2;font-weight:bold">
                         This is heading 3</p>
-                    <p
-                        style="font-size:20px;line-height:1.2;font-weight:bold">
+                    <p style="font-size:20px;line-height:1.2;font-weight:bold">
                         This is heading 4</p>
-                    <p
-                        style="font-size:16px;line-height:1.4;font-weight:bold">
+                    <p style="font-size:16px;line-height:1.4;font-weight:bold">
                         This is heading 5</p>
-                    <p> <span
-                            style="font-size:12px;line-height:1.4;font-weight:bold">This
+                    <p> <span style="font-size:12px;line-height:1.4;font-weight:bold">This
                             is heading 6</span>
                 </div>
             </article>
@@ -177,7 +175,7 @@
                     <p>Your First Paragraph</p>
                     <p>Your Second Paragraph</p>
                     <p>Your Third Paragraph</p>
-                </div>    
+                </div>
             </article>
 
             <article>
@@ -211,12 +209,14 @@
                     These can be placed anywhere on your website, although it is unusual to include them in existing
                     elements such as paragraphs or headings. Here is how a typical HTML image tag will present itself:
                 </p>
-                <p class="code"><code>&lt;img src="url" alt="some_text" style="width:width;height:height;"&gt;</code></p>
+                <p class="code"><code>&lt;img src="url" alt="some_text" style="width:width;height:height;"&gt;</code>
+                </p>
                 <p>You should also provide alternate text for your image, which helps people to view it in the case of
                     slow loading times or the use of screen reader. This way, if the browser cannot find an image, it
                     will display the value of the alternate attribute to viewers. This once again uses the image tag,
                     but includes a different set of attributes:</p>
-                <p class="code"><code>&lt;img src="wrongname.gif" alt ="HTML5 Icon" style="width: 128px; height: 128px;"&gt;</code>
+                <p class="code">
+                    <code>&lt;img src="wrongname.gif" alt ="HTML5 Icon" style="width: 128px; height: 128px;"&gt;</code>
                 </p>
             </article>
         </section>
@@ -256,25 +256,25 @@
                 <p>Let’s say that you want to highlight a word within an existing paragraph element. You can achieve
                     this by making it bold, using simple tags within the standard &lt;p&gt; element. Using HTML, you
                     will program this as follows:</p>
-                <div class="code">    
+                <div class="code">
                     <code>&lt;p&gt;I want &lt;b&gt;this&lt;/b&gt; word to be bold.&lt;/p&gt;</code>
                 </div>
                 <p>This instance it will produce the following results:</p>
-                <p class="code">I want <b>this</b> word to be bold.</p> 
+                <p class="code">I want <b>this</b> word to be bold.</p>
                 <p>Now, let’s say that you would also like to change the typography of this word so that it is also
                     italic, which should be coded like this:</p>
-                <div class="code">     
+                <div class="code">
                     <code>&lt;p&gt;I want &lt;b&gt;&lt;i&gt;this&lt;/b&gt;&lt;/i&gt; word to be bold.&lt;/ p&gt;</code>
-                </div>    
+                </div>
                 <p>As you can see, the starting and closing italic tags have simply been incorporated into the &lt;p&gt;
                     element. This will now transform the content within the element so that it appears as follows: </p>
                 <p class="code">I want <i><b>this</b></i> word to be bold.</p>
-               
+
                 <p>Of course, you may decide that you would prefer to highlight this word in a different way, such as
                     underline (which is represented by the &lt;u&gt; and &lt;/u&gt; tags):</p>
                 <div class="code">
                     <code>&lt;p&gt;I want &lt;u&gt;this&lt;/u&gt; word to be underlined.&lt;/p&gt;</code>
-                </div>    
+                </div>
                 <p>In this instance, the text will appear as follows on your document or landing page:</p>
                 <p>I want <u>this</u> word to be underlined.</p>
 
@@ -310,9 +310,9 @@
                     paragraphs on a specific page, for example, with the alignment being the property that you wish to
                     set. Subsequently, ’center’ is the value of the attribute, although you have the choice of aligning
                     your text to the left or the right. For example:</p>
-                <div class="code">    
+                <div class="code">
                     <code>&lt;p align="center" &gt;This text is center aligned&lt;/p&gt;</code>
-                </div>    
+                </div>
                 <p>This will align your &lt;p&gt; elements in the centre of the page, and create a uniform layout to
                     suit the specific nature of your website (see below):</p>
                 <div style="text-align: center !important; line-height: 2" class="code">
@@ -329,14 +329,14 @@
                     along with the affiliated anchor text that will house the URL. It is the ‘href ’ attribute that
                     specifies the site address, however, this is incorporated as part of the start tag. It is coded in
                     HTML as follows:</p>
-                <div class="code">    
+                <div class="code">
                     <code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code>
-                </div>    
+                </div>
                 <p>This clearly highlights the distinction between the starting and the closing tag, and will translate
                     as follows on your landing page:</p>
                 <div class="code">
                     <a target="_blank" href="https://www.google.com" rel="noopener noreferrer">Google</a>
-                </div>    
+                </div>
             </article>
 
             <article>
@@ -349,11 +349,11 @@
                     set. When applying the color red to a main heading, for example, it will look like this:</p>
                 <div class="code">
                     <code>&lt;h1 style=”background-color:red”&gt;Background-color set by using red&lt;/h1&gt;</code>
-                </div>    
+                </div>
                 <p>Once applied, this element will appear as follows on your website:</p>
                 <div class="code">
                     <h1 style="background-color:red">Background-color set by using red</h1>
-                </div>    
+                </div>
             </article>
         </section>
 
